@@ -1,0 +1,36 @@
+@use '../../styles/partials/_variable.scss' as *;
+
+.top--bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $secondary-bg-color;
+  padding: 0.9rem 6rem;
+  color: $secondary-text-color;
+
+  .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    .contact--phone,
+    .contact--email{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+
+  .social--link{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    a{
+      color: $secondary-text-color;
+    }
+  }
+}

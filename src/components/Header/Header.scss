@@ -1,0 +1,57 @@
+@use '../../styles/partials/_variable.scss' as *;
+
+.header--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 6rem;
+
+  .logo--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    img:nth-child(1) {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    img:nth-child(2) {
+      width: 10rem;
+      height: 3rem;
+    }
+  }
+
+  .nav--bar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    a {
+      color: $primary-text-color;
+      text-decoration: none;
+
+      &.active {
+        background: $primary-bg-color;
+        padding: 0.4rem 0.8rem;
+        border-radius: 2rem;
+      }
+    }
+  }
+
+  .book-table--btn {
+    padding: 0.8rem 1.3rem;
+    border: 0.1rem solid $secondary-bg-color;
+    font-weight: 600;
+    color: $primary-text-color;
+    text-decoration: none;
+    border-radius: 2rem;
+    cursor: pointer;
+
+    a {
+      color: $primary-text-color;
+      text-decoration: none;
+    }
+  }
+}

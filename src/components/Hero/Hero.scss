@@ -1,0 +1,78 @@
+
+@use '../../styles/partials/variable.scss' as *;
+
+.hero--container {
+  background: url('/img/hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero--content {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 0 20px;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-family: $playFlair;
+    }
+
+    p {
+      font-size: 0.65rem;
+      margin-bottom: 10px;
+    }
+
+    .hero--btns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      gap: 2.4rem;
+
+      .hero--bookTable-btn,
+      .hero--exploreMenu-btn {
+        background: $btn-color;
+        color: $secondary-text-color;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 3rem;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        a {
+          color: $secondary-text-color;
+          text-decoration: none;
+          font-size: 0.9rem;
+        }
+
+        &:hover {
+          background: $btn-color;
+          color: $secondary-text-color;
+          transform: scale(1.1);
+        }
+      }
+
+      .hero--exploreMenu-btn {
+        background: $primary-bg-color;
+        border: 0.1rem solid $btn-color;
+
+        a {
+          color: $some-text-color;
+        }
+
+        &:hover {
+          background: $primary-bg-color;
+          color: $some-text-color;
+        }
+      }
+    }
+  }
+}
