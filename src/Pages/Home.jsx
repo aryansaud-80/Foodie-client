@@ -1,3 +1,4 @@
+import AboutSection from '../components/AboutSection/AboutSection';
 import BrowseMenu from '../components/BrowseMenu/BrowseMenu';
 import Hero from '../components/Hero/Hero';
 
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <Hero />
       <BrowseMenu />
+      <AboutSection />
     </>
   );
 };
