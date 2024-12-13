@@ -1,10 +1,12 @@
-import { Link, NavLink } from 'react-router';
+import { Link, NavLink, useNavigate } from 'react-router';
 import './Header.scss';
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <section className='header--container'>
-      <div className='logo--container'>
+      <div onClick={()=> navigate('/')} className='logo--container'>
         <img src='./img/japanese-food.png' alt='logo' />
         <img src='./img/Cuisine.png' alt='logo' />
       </div>

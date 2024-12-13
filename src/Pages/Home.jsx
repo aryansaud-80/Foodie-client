@@ -1,14 +1,12 @@
-import TopBar from "../components/TopBar/TopBar";
-import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
+import BrowseMenu from '../components/BrowseMenu/BrowseMenu';
+import Hero from '../components/Hero/Hero';
 
 const Home = () => {
   return (
     <>
-      <TopBar />
-      <Header />
       <Hero />
+      <BrowseMenu />
     </>
-  )
-}
-export default Home
+  );
+};
+export default Home;

@@ -1,0 +1,52 @@
+.menu-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 18rem;
+  background-color: #fff;
+  border: 0.14rem solid #f0f0f0;
+  border-radius: 0.6rem;
+  gap: 1rem;
+  transition: transform 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translate(0, -0.5rem);
+  }
+
+  img {
+    position: absolute;
+    top: 1rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.6rem 0.6rem 0 0;
+    padding: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #666;
+    text-align: center;
+  }
+
+  .menu-btn {
+    position: absolute;
+    bottom: 1rem;
+    color: #ad343e;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
