@@ -1,0 +1,61 @@
+.service--container {
+  width: 100%;
+  background-color: #ffffff;
+  height: 100vh;
+
+  .service--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+
+    .service--title {
+      font-size: 2.5rem;
+      color: #001001;
+      margin-bottom: 1rem;
+      align-self: self-start;
+    }
+
+    .service--items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      justify-self: center;
+      gap: 1rem;
+
+      .service--item {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 18rem;
+        height: 20rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        transform: scale(1);
+        padding: 0.4rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        gap: 0.5rem;
+        cursor: pointer;
+
+        &:hover{
+          transform: scale(1.05);
+          transition: all 0.3s ease;
+        }
+
+        h3{
+          font-size: 1.2rem;
+          font-weight: 500;
+          color: #001001;
+        }
+
+        img{
+          width: 100%;
+          object-fit: cover;
+          height: 12rem;
+        }
+      }
+    }
+  }
+}
