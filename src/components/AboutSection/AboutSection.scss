@@ -10,10 +10,9 @@
       justify-content: center;
       align-items: center;
       gap: 3rem;
-      padding: 10rem;
+      padding: 5rem;
 
       .left--side{
-        padding-right: 2rem;
         flex: 1;
 
         img{
@@ -26,7 +25,7 @@
 
       .right--side{     
         padding-left: 2rem;
-        flex: 1;
+        flex: 3;
 
         h2{
           font-size: 3rem;
